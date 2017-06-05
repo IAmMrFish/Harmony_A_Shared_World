@@ -1,0 +1,101 @@
+####### - K comment: The template does not have everything, check the references on the site for more.
+
+# Blank Race Template
+# The XXX is the Race Name
+#	XXX
+#	KEY:XXX
+#	SORTKEY:XXX
+#	SIZE:M
+#	SOURCEPAGE:p.
+#	RACETYPE:yyy
+#	MONSTERCLASS:yyy:0
+#	TYPE:yyy
+#	RACESUBTYPE:zzz
+#	MOVE:Walk,0
+#	BONUS:VAR|Manueverability|0
+#	BONUS:VAR|AC_Natural_Armor|0|TYPE=Base
+#	FACE:5
+#	REACH:5
+#	LEGS:2
+#	HANDS:2
+#	STARTFEATS:1			// Only if the race gains feats
+#	NATURALATTACKS:Claw,Natural.Melee.Weapon,*1,1d4
+#	NATURALATTACKS:Bite,Natural.Melee.Weapon,*1,1d6
+#OR	NATURALATTACKS:Claw,Natural.Melee.Weapon,*1,1d4|Bite,Natural.Melee.Weapon,*1,1d6
+#OR	ABILITY:Internal|AUTOMATIC|Bite|Claw
+#	BONUS:STAT|STR|0
+#	BONUS:STAT|DEX|0
+#	BONUS:STAT|CON|0
+#	BONUS:STAT|INT|0
+#	BONUS:STAT|WIS|0
+#	BONUS:STAT|CHA|0
+#	ABILITY:Internal|AUTOMATIC|Racial Traits ~ XXX
+#	CR:0
+#	LEVELADJUSTMENT:0			//Only for systems where ECL/Level Adjustments are used.
+#	KIT:1|XXX Default
+#	HITDICEADVANCEMENT:0		//Only for systems where HD and size are set progression.
+#	FACT:IsPC|True			//6.05.03 or higher only!
+
+
+#####
+#Xill is the name of the race. It must be the first field on each line, the remaining tags may be of any order.
+#
+#The STARTFEATS tag grants a number of free feats to the race at first level.
+#
+#The SIZE tag determines the size of the Race. (F=Fine, D=Diminutive, T=Tiny, S=Small, M=Medium, L=Large, H=Huge, G=Gargantuan,
+#C=Colossal). Size is used in determining to-hit, AC, and affects some skills).
+#
+#The MOVE tag determines the Type and Speed of the different movement types the race has.
+#
+#The FACE tag Describes how much space the creature takes up. For 3.0 rules this tag is used for the Face statistic. For 3.5
+#rules this tag is used for the Space statistic. If only one number is used it is assumed to represent all sides.
+#
+#The REACH tag determines the reach of the Race.
+#
+#The VISION tag is used to grant the specified vision to the character.
+#
+#The PREALIGN tag is used, so it is required that you have a certain alignment to be able to select this race. There is a
+#multitude of existing prerequiste tags in PCGen. If you are looking into the documentation under List File Tag Index, you
+#can find them listed under the topic "PRExxx tags".
+#
+#The LANGAUTO tag is holding a list of languages that the character automatically gains.
+#
+#The BONUS tags are a group of similar tags, that grant some form of Bonus to another already existing tag. To read a description
+#of them, look in the List File Tag Index under the topic "Bonus tags".
+#
+#The MONCSKILL tag is used to grant the listed skills as monster class skills.
+#
+#The AUTO:WEAPONPROF tag is holding a list of weapons that are granted as free weapon proficiencies.
+#
+#The LEGS and HANDS tags set the number of respective limbs that a creature has. The number of legs is used to determine the
+#carrying capacity of a creature, while the number of hands is used for purposes of Multiattack and Multidexterity.
+#
+#The NATURALATTACKS tag defines the non-equipment attacks a race may possess. It follows a pattern of Attack Name, Attack Types,
+#Number of Attacks and Attack Damage.
+#
+#The SA tag is holding a text that will be displayed as Special Ability on the output sheet.
+#
+#The SR tag indicates the Spell Resistance this race bestows.
+#
+#The MONSTERCLASS tag determines the number of Monster Levels the race gets on start. The class must be TYPE:Monster and have a
+#PRERACETYPE that matches the race.
+#
+#The RACETYPE tag defines the Type of creature the race is. This is important for matching up with Monster HD, and for references to
+#race, such as the Rangers Favored Enemy.
+#
+#In the HITDICEADVANCEMENT tag the last number of this comma delimited list is the highest HD the creature can advance to,
+#through HD advancement. All the numbers preceding the last number each indicate the highest number of HD the creature can have
+#before its size increases by one category.
+#
+#The LEVELADJUSTMENT tag raises the Effective Character Level (ECL) of the creature by the number supplied.
+#
+#The CR tag sets the Challenge Rating of the creature. For CR's less than 1, fractions are used (1/2, 1/4, 1/8). Note: CR's using
+#fractions must start with a "1/". Expressions such as CR:3/4 or CR:0.5 will not work.
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the race. This will be displayed in PCGen.
+
+Half-Gnome Half-Elf (Mander)(Medium)	SORTKEY:HRMNY_PC		SIZE:M		RACETYPE: Humanoid		MOVE:Walk,30		FACE:5		REACH:5		LEGS:2		HANDS:2		VISION: Low-light		LANGAUTO: Common, Elven, Gnome		LANGBONUS: Draconic, Dwarven, Giant, Gnoll, Goblin, Orc, Sylvan		BONUS:STAT|STR|-2		BONUS:STAT|DEX|+2		BONUS:STAT|CHA|+2		BONUS:SKILL|Perception|2|TYPE=Racial	SAB: +2 racial saving throw bonus against Enchantment spells or effects		SAB: +2 racial saving throw bonus against Illusion spells or effects	SAB: +2 Spellcraft bonus for examining magic items. Can roll Spellcraft untrained.		LEVELADJUSTMENT:0	FACT:IsPC|True
+
+Half-Gnome Half-Elf (Mander)(Small)	SORTKEY:HRMNY_PC		SIZE:S		RACETYPE: Humanoid		MOVE:Walk,20		FACE:5		REACH:5		LEGS:2		HANDS:2		VISION: Low-light		LANGAUTO: Common, Elven, Gnome		LANGBONUS: Draconic, Dwarven, Giant, Gnoll, Goblin, Orc, Sylvan		BONUS:STAT|STR|-2		BONUS:STAT|DEX|+2		BONUS:STAT|CHA|+2		BONUS:SKILL|Perception|2|TYPE=Racial	SAB: +2 racial saving throw bonus against Enchantment spells or effects		SAB: +2 racial saving throw bonus against Illusion spells or effects	SAB: +2 Spellcraft bonus for examining magic items. Can roll Spellcraft untrained.		LEVELADJUSTMENT:0	FACT:IsPC|True
+
+Boglrod		SORTKEY:HRMNY_PC							STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5					LANGBONUS:Celestial,Draconic,Gnoll,Gnome,Goblin,Orc,Sylvan															BONUS:STAT|CON|-2	BONUS:STAT|DEX,INT|2			AUTO:LANG|Common|Elven		ABILITY:Internal|AUTOMATIC|Race Traits ~ Elf							RACETYPE:Humanoid	RACESUBTYPE:Elf		TYPE:Humanoid.Base.PC	SOURCEPAGE:p.22	FACT:IsPC|true

@@ -1,0 +1,58 @@
+# CVS $Revision$ $Author$ -- Tue Dec 15 01:48:08 2015 -- reformated by PCGen PrettyLST v6.06.00
+CAMPAIGN:Harmony
+GAMEMODE:Pathfinder
+RANK:9
+GENRE:Fantasy
+BOOKTYPE:Homebrew
+SETTING:A Shared World
+TYPE:Harmony.Pathfinder
+#PUBNAMEWEB:http://www.mpcwebsite.com
+#SOURCELONG:My Pathfinder Campaign
+#SOURCESHORT:MPC
+#SOURCEWEB:http://www.mpcwebsite.com
+#SOURCEDATE:2008-01
+#ISOGL:NO
+#COPYRIGHT:My Pathfinder Campaign, Copyright 2015 by PCGen Team
+
+#INFOTEXT:To display an Information in the Source Info section on the Source Materials tab, replace the text after 'INFOTEXT:' with your text and remove the '#'
+
+DATACONTROL:hrmny__datacontrols.lst
+ALIGNMENT:hrmny__align.lst
+STAT:hrmny__stats.lst
+SAVE:hrmny__saves.lst
+
+
+ABILITY:hrmny_abilities.lst
+ABILITYCATEGORY:hrmny_abilitycategories.lst
+BIOSET:hrmny_biosettings.lst
+CLASS:hrmny_classes.lst
+COMPANIONMOD:hrmny_companionmods.lst
+DEITY:hrmny_deities.lst
+DOMAIN:hrmny_domains.lst
+EQUIPMENT:hrmny_equip_arms_armor.lst
+EQUIPMENT:hrmny_equip_general.lst
+EQUIPMOD:hrmny_equipmods.lst
+ABILITY:hrmny_feats.lst
+KIT:hrmny_kits.lst
+LANGUAGE:hrmny_languages.lst
+ARMORPROF:hrmny_profs_armor.lst
+SHIELDPROF:hrmny_profs_shield.lst
+WEAPONPROF:hrmny_profs_weapon.lst
+RACE:hrmny_races.lst
+SKILL:hrmny_skills.lst
+SPELL:hrmny_spells.lst
+TEMPLATE:hrmny_templates.lst
+
+
+### You can hide TYPEs in the GUI - TYPEs are handy for organization, but some are only used for internal functions.
+#HIDETYPE:EQUIP|SpecialSuppressor
+#HIDETYPE:SKILL|Science
+#HIDETYPE:FEAT|Leadership
+
+#Remove the '#' in front of those lines referring to files that you actually want to load
+#Remember to set the GAMEMODE to the one you really want.
+#Options in the Open Source data are 35e, Modern, Pathfinder, Darwins_World_2.
+
+#If you use this framework to set up a dataset of your own, then you may want to rename the folder and files to something
+#different. Otherwise if you ever should install a newer version of PCGen into your existing directory or needed to re-install
+#your existing installation of PCGen, your changes would get overwritten and thus be lost.
